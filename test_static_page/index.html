@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>my Page</title>
 </head>
-
-<body>
     <style>
         header {
             background-color: #ffbdbd;
@@ -28,24 +26,9 @@
         }
 
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 5%;
-        }
-    
-        main img {
-            width: 100%;
-            max-width:  500px;
-            max-height: auto;
+            height: 100%;
         }
 
-        @media (max-width: 480px) {
-            main img {
-                max-width: 100%;
-            }
-        }
         footer {
             background-color: gray;
             color: white;
@@ -55,8 +38,50 @@
             position: absolute;
             bottom: 0%;
         }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh; /* 追加 */
+            height: auto;
+        }
+
+        main h1{
+            text-align: center;
+            color: blue;
+        }
+
+        main p{
+            text-align: center;
+        }
+
+        .kani{
+            margin: 50px 0 10px;
+            border-radius: 10px;
+            animation: name_animTest 2s infinite;
+        }
+
+        .kani img{
+            height: 100px;
+        }
+
+        @keyframes name_animTest {
+        0% {
+            transform: translateX(-100px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+        }
+
 
     </style>
+
+<body>
     <header>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
@@ -65,7 +90,11 @@
         </ul>
     </header>
     <main>
-        <img class="kani" src="under_construction.PNG">
+        <h1>工事中</h1>
+        <p>只今作成中です。今しばらくお待ちください。</p>
+        <div class="kani">
+          <img src="kani_loop.PNG"></img>
+        </div>
     </main>
     <footer>
         <p>Ochanomizu Univ. Yukina.T</p>
