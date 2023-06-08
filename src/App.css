@@ -1,0 +1,47 @@
+
+*{
+  background-color: azure;
+}
+
+header{
+  background-color: rgb(198, 197, 197);
+  height: 30px;
+  width: 100%;
+}
+footer {
+  text-align: center;
+  background-color: rgb(181, 181, 181);
+}
+
+main {
+  height: 400px;
+}
+
+main h1{
+  margin: 15% 0 0 0;
+  text-align: center;
+  color: blue;
+}
+
+main p{
+  text-align: center;
+  background-color: None;
+}
+
+.kani{
+  border-radius: 10px;
+  animation: name_animTest 2s infinite;
+}
+.kani img{
+  height: 100px;
+}
+
+@keyframes name_animTest {
+  0% {
+      transform: translateX(-100px);
+  }
+
+  100% {
+      transform: translateX(0px);
+  }
+}
