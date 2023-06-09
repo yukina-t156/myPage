@@ -1,4 +1,4 @@
 # Reactを使った自分のホームページのソースコードです
-そのうちサーバー立てて公開予定
+そのうちサーバー立てて公開予定  
 -> 公開しました
-[ページ](yta156.sakura.ne.jp)
+[ページ](https://yta156.sakura.ne.jp/www/index.html)
