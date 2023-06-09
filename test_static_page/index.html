@@ -14,13 +14,13 @@
             text-align: center;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
         }
-        ul {
+        header ul {
             overflow:hidden;
             list-style:none;
             margin: 0 auto;
             z-index: 20;
         }
-        ul li {
+        header ul li {
             display: inline-block;
             padding: 20px 100px 100px 10px;
         }
@@ -57,7 +57,7 @@
         main p{
             text-align: center;
         }
-
+        /*
         .kani{
             margin: 50px 0 10px;
             border-radius: 10px;
@@ -67,15 +67,36 @@
         .kani img{
             height: 100px;
         }
-
-        @keyframes name_animTest {
-        0% {
-            transform: translateX(-100px);
+        */
+        
+        @keyframes loop {
+            from {
+            transform: translateX(0%);
+            }
+            to {
+            transform: translateX(-100%);
+            }
+        }
+        .kani-loop {
+            margin: 20px;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 100px;
+            overflow-y: hidden;
+            padding: 30px;
         }
 
-        100% {
-            transform: translateX(0px);
-        }
+        .kani-list {
+            display: flex;
+            align-items: center;
+            animation: loop infinite linear 5s both;
+            list-style:none;
+            .li {
+                min-width: 150px;
+                list-style:none;
+            }
         }
 
 
@@ -92,8 +113,32 @@
     <main>
         <h1>工事中</h1>
         <p>只今作成中です。今しばらくお待ちください。</p>
-        <div class="kani">
-          <img src="kani_loop_old.PNG"></img>
+        <div class="kani-loop">
+            <ul class="kani-list">
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+            </ul>
+            <ul class="kani-list">
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+            </ul>
+            <ul class="kani-list">
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+            </ul>
+            <ul class="kani-list">
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+            </ul>
+            <ul class="kani-list">
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+                <li><img src="under_construction_old.PNG" style="height: 100px; width: 100px;"></img></li>
+            </ul>
         </div>
     </main>
     <footer>
