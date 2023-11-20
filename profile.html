@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>my Page</title>
+</head>
+    <style>
+        header {
+            background-color: #ffbdbd;
+            position: absolute;
+            top: 30px;
+            height: 64px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+        header ul {
+            overflow:hidden;
+            list-style:none;
+            margin: 0 auto;
+            z-index: 20;
+        }
+        header ul li {
+            display: inline-block;
+            padding: 20px 100px 100px 10px;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        footer {
+            background-color: gray;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            bottom: 0%;
+        }
+        main {
+            margin: 150px 0 0 0;
+            min-height: 450px;
+            text-align: center;
+        }
+        .imgs {
+            float: left;
+            display: flex;
+            align-items: flex-end;
+            margin: 5% 3% 8% 2%;
+        }
+        main img{
+            float: right;
+        }
+        .info, .belongs{
+            display: flex;
+            flex-direction: column;
+            margin: 5px 20px 5px;
+            outline: 1px solid green;
+            padding: 10px 20px 20px;
+            height: 200px;
+            width: 40%;
+            flex-wrap: nowrap;
+        }
+        .info p, .belongs p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .info h3, .belongs h1 {
+            border-bottom: 3px solid #47b8ff;
+        }
+
+        .name {
+            padding: 0;
+            flex-basis: auto;
+            margin: 0;
+        }
+
+        .belongs p {
+            flex-basis: auto;
+        }
+
+        .profile {
+            padding:5px;
+            border-bottom: 5px dotted #1c3e53;
+            min-height: 250px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        .attention {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px;
+        }
+
+    </style>
+
+<body>
+    <header>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="no_page.html">Profile</a></li>
+            <li><a href="no_page.html">Works</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="profile">
+            <div class="imgs">
+                <img src="images/profile_resize.gif" height="120"></img>
+                <img src="images/cat.gif" height="40"></img>
+            </div>
+            <div class="info">
+                <h1 class="name">立田 結希菜</h1>
+                <h3 class="name">(Yukina Tatsuta)</h3>
+                <p>she/her</p>
+                <p>2001年生まれ 射手座 AB型</p>
+                <p>長野出身 横浜育ち</p>
+            </div>
+            <div class="belongs">
+                <h1 class="name">所属</h1>
+                <a href="http://www.is.ocha.ac.jp/">お茶の水女子大学理学部情報科学科</a>
+                <a href="https://twitter.com/otips2020">競技プログラミングサークル O-Tips</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Ochanomizu Univ. Yukina.T</p>
+    </footer>
+</body>
+</html>
